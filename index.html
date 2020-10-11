@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <p id="disclaimer">
+        Задача которую я не смог решить на собесе :(<br>
+        Вы стоите в лесу, вас окружают деревья.<br>
+        Вы знаете только угол обзора вашей камеры.<br>
+        Нужно найти угол, под которым в обзор камеры будет помещаться бОльшее кол-во деревьев.<br>
+    </p>
+    <table id="layout">
+        <tbody>
+            <tr>
+                <td>
+                    <div>
+                        <p>Градус вращения: <span id="rotation-angle-value"></span></p>
+                        <p>Угол наблюдения: <span id="view-angle-value"></span></p>
+                        <p>Всего точек: <span id="total-dots-value"></span></p>
+                        <p>Кол-во наблюдаемых точек: <span id="highlighted-dots-value"></span></p>
+                    </div>
+                    <div>
+                        <h3>Угол наблюдения:</h3>
+                        <input id="view-angle" type="range" min="0" max="360" step="1"/>
+                    </div>
+                    <div>
+                        <h3>Вращение:</h3>
+                        <input id="rotation-angle" type="range" min="0" max="360" step="1"/>
+                    </div>
+                    <div>
+                        <h3>Кол-во точек:</h3>
+                        <input id="points-count" type="range" min="0" max="100" step="1"/>
+                    </div>
+                    <div>
+                        <label>
+                            <input id="scan-toggle" type="checkbox"/>
+                            Включить сканирование
+                        </label>
+                    </div>
+                    <div>
+                        <p><button id="randomize">Random</button></p>
+                    </div>
+                </td>
+                <td>
+                    <canvas id="canvas"></canvas>
+                </td>
+                <td>
+                    <ul id="scoreboard"></ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="out.js"></script>
+    <script>require(['index']);</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+#layout {
+    font-family: Arial;
+    font-size: 14px;
+}
+
+#layout td {
+    vertical-align: top;
+}
+
+#scoreboard {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+#disclaimer {
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 16px;
+}
+#scoreboard .best {
+    color: rgba(213, 36, 206, 0.87);
+}
