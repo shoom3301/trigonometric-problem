@@ -1,10 +1,12 @@
 #layout {
     font-family: Arial;
     font-size: 14px;
+    width: 100%;
 }
 
 #layout td {
     vertical-align: top;
+    width: 33%;
 }
 
 #scoreboard {

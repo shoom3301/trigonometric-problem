@@ -97,7 +97,7 @@ define("render", ["require", "exports", "utils"], function (require, exports, ut
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.renderUpdate = void 0;
-    const offset = 150;
+    const offset = 300;
     function X(n, additionalOffset = 0) {
         return n + (offset / 2) + additionalOffset;
     }

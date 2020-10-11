@@ -1,7 +1,7 @@
 import { Degree, Point, PointOnCircle, Radian } from './model'
 import { degreeToRadian } from './utils'
 
-const offset = 150
+const offset = 300
 
 function X(n: number, additionalOffset = 0): number {
     return n + (offset /2) + additionalOffset
