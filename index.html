@@ -8,36 +8,36 @@
 </head>
 <body>
     <p id="disclaimer">
-        Вы стоите в лесу, вас окружают деревья.<br>
-        Вы знаете только угол обзора вашей камеры.<br>
-        Нужно найти угол, под которым в обзор камеры будет помещаться бОльшее кол-во деревьев.<br>
+        You are standing in the forest, and there are trees around you.<br>
+        You know only angle of your camera view, and trees coordinates (cartesian coordinate system).<br>
+        You need to find the angle of camera view that includes the biggest count of trees.<br>
     </p>
     <table id="layout">
         <tbody>
             <tr>
                 <td>
                     <div>
-                        <p>Градус вращения: <span id="rotation-angle-value"></span></p>
-                        <p>Угол наблюдения: <span id="view-angle-value"></span></p>
-                        <p>Всего точек: <span id="total-dots-value"></span></p>
-                        <p>Кол-во наблюдаемых точек: <span id="highlighted-dots-value"></span></p>
+                        <p>Rotation angle: <span id="rotation-angle-value"></span></p>
+                        <p>Camera view angle: <span id="view-angle-value"></span></p>
+                        <p>Total trees: <span id="total-dots-value"></span></p>
+                        <p>Observed trees: <span id="highlighted-dots-value"></span></p>
                     </div>
                     <div>
-                        <h3>Угол наблюдения:</h3>
+                        <h3>Camera view angle:</h3>
                         <input id="view-angle" type="range" min="0" max="360" step="1"/>
                     </div>
                     <div>
-                        <h3>Вращение:</h3>
+                        <h3>View rotation:</h3>
                         <input id="rotation-angle" type="range" min="0" max="360" step="1"/>
                     </div>
                     <div>
-                        <h3>Кол-во точек:</h3>
+                        <h3>Trees count:</h3>
                         <input id="points-count" type="range" min="0" max="100" step="1"/>
                     </div>
                     <div>
                         <label>
                             <input id="scan-toggle" type="checkbox"/>
-                            Включить сканирование
+                            Enable scanning
                         </label>
                     </div>
                     <div>
