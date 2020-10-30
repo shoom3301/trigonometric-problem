@@ -1,6 +1,5 @@
-#Задача
-Вы стоите в лесу, вас окружают деревья.  
-Вы знаете только угол обзора вашей камеры.  
-Нужно найти угол, под которым в обзор камеры будет помещаться бОльшее кол-во деревьев.  
+You are standing in the forest, and there are trees around you.
+You know only angle of your camera view, and trees coordinates (cartesian coordinate system).
+You need to find the angle of camera view that includes the biggest count of trees.
 
 https://shoom3301.github.io/trigonometric-problem/
