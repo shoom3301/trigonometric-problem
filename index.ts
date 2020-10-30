@@ -60,7 +60,7 @@ function init() {
             .map(point => {
             const li = document.createElement('li')
 
-            li.innerText = `Градус: ${point.degree}, кол-во точек: ${point.includedDotsCount}`
+            li.innerText = `Degree: ${point.degree}, observed trees: ${point.includedDotsCount}`
 
             if (countInTheBestView === point.includedDotsCount) {
                 li.classList.add('best')
