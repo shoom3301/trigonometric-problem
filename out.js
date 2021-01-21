@@ -247,7 +247,7 @@ define("index", ["require", "exports", "generation", "render", "utils"], functio
                 .sort((a, b) => a.includedDotsCount > b.includedDotsCount ? -1 : 1)
                 .map(point => {
                 const li = document.createElement('li');
-                li.innerText = `Градус: ${point.degree}, кол-во точек: ${point.includedDotsCount}`;
+                li.innerText = `Degree: ${point.degree}, dots count: ${point.includedDotsCount}`;
                 if (countInTheBestView === point.includedDotsCount) {
                     li.classList.add('best');
                 }
